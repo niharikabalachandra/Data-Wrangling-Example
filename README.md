@@ -42,3 +42,16 @@ The ‘new_dictionary’ list is added to the ‘valid_words’ list to form all
 can be formed, including those where blank tiles are used as wildcards. This combined list is
 new_dictionary_ﬁnal. You can view this combined list of words in the ‘wordlistforwildcards.csv’
 ﬁle.
+
+## Big O Analysis
+1.Section 1 of the code has a for loop that iterates over the list ‘dictionary’ and thus a O(n) time
+complexity for n iterations of the loop.
+
+2.Section 2 of the code has a for loop nested within another for loop and thus a O(nxn)= O(nˆ2)
+time complexity, where n is the number of iterations of the for loop.
+
+3.Section 3 of the code has a for loop that iterates over the list ‘valid_words’ and thus a O(n)
+time complexity for n iterations of the loop.
+
+The overall complexity is thus O(n + nˆ2 + nˆ2), since n<< nˆ2 the complexity can be approximated
+to O(nˆ2)
